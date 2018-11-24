@@ -18,7 +18,7 @@ body {
 	position: absolute;
 }
 .sp-canvas {
-
+	display: none;
 }
 .st {
 	width: 800px;
