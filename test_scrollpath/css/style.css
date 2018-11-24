@@ -1,0 +1,48 @@
+
+body {
+	color: white;
+	overflow: hidden;
+  background-color: black;
+}
+
+.big {
+	display: block;
+	font-size: 45px;
+	font-weight: bold;
+	line-height: 1.3em;
+	margin-bottom: 10px;
+
+}
+
+.wrapper div {
+	position: absolute;
+}
+.sp-canvas {
+
+}
+.st {
+	width: 800px;
+	font-size: 30px;
+	text-align: center;
+	font-weight: bold;
+}
+.description {
+	top: 740px;
+	left: 180px;
+	width: 440px;
+}
+.next {
+	top: 1510px;
+	left: 630px;
+	width: 400px;
+}
+.scrollbar {
+	top: 2510px;
+	left: -1050px;
+	width: 400px;
+}
+.aaa {
+	top: 4110px;
+	left: 430px;
+	width: 400px;
+}

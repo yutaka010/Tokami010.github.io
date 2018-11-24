@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<meta charset="UTF-8">
+<title>ページング</title>
+<head>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link href="./css/scrollpath.css" rel="stylesheet" type="text/css" charset="utf-8">
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="js/jquery.scrollpath.js"></script>
+  <script type="text/javascript">
+    $(document).ready(init);
+    function init() {
+      $.fn.scrollPath("getPath")
+      .moveTo(400, 50, {name: "start"})
+      .lineTo(600, 800, {name: "description"})
+      .arc(200, 1200, 400, -Math.PI/2, Math.PI/2, true)
+      .lineTo(600, 1600, {name: "next"})
+      .arc(600, 2000, 400, Math.PI/2, Math.PI/2, false)
+      .lineTo(-230, 1800, {name: "scrollbar"})
+      .lineTo(100, 5400, {name: "aaa"})
+      $(".wrapper").scrollPath({drawPath: true, wrapAround: true});
+    }
+  </script>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="st">
+      <span class="big">スタート</span>
+    </div>
+    <div class="description">
+      <span class="big">第一項目</span>
+    </div>
+    <div class="next">
+      <span class="big">第2項目</span>
+    </div>
+    <div class="scrollbar">
+      <span class="big">第Ⅲ項目</span>
+    </div>
+    <div class="aaa">
+      <span class="big">END</span>
+    </div>
+  </div>
+</body>
+</html>
